@@ -5,10 +5,10 @@ Repositorio del grupo. Partir de este esqueleto. No borrar la estructura de `src
 ## Integrantes
 
 | Nombre | Mail | GitHub |
-| --- | --- | --- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Pablo Navas | navaspabloo@gmail.com | navaspabloo |
+| Florencia Espinosa | florenciaespinosad@gmail.com | FlorenceESPINOSA |
+| Hernán Correa | herrniii75@gmail.com | herni36 |
+
 
 **Tema elegido:** Pokédex / Recetario / Biblioteca musical (dejar uno)
 
