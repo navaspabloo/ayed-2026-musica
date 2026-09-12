@@ -1,5 +1,8 @@
 from src.config import TEMA
 
+from src.dominio.datos import canciones
+
+
 TEMAS = {
     "pokedex": "Pokédex",
     "recetario": "Recetario",
@@ -9,6 +12,11 @@ TEMAS = {
 
 def pendiente():
     print("Todavía no está implementado. Completar en la entrega que corresponde.")
+
+def listar_catalogo():
+    print("id,titulo,artista,album,genero,anio,duracion_seg")
+    for c in canciones:
+        print(str(c["id"])+"," + c["titulo"]+"," + c["artista"]+"," + c["album"]+"," + c["genero"]+"," + str(c["anio"]) +","+ str(c["duracion_seg"]))
 
 
 def mostrar_menu():
@@ -39,7 +47,8 @@ def main():
         if opcion == "0":
             print("Chau.")
         elif opcion in {"1", "2", "3", "4", "5", "6", "7", "8", "9"}:
-            pendiente()
+            if opcion == "1":
+                listar_catalogo()
         else:
             print("Opción inválida.")
 
