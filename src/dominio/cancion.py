@@ -7,6 +7,18 @@ class Cancion:
         self.genero = _genero
         self.year = _year
         self.duracion = _duracion
+        self.versiones = []
 
-        def __str__(self):
-            return f" {self.id} - {self.titulo} - {self.artista} - {self.album} - {self.genero} - {self.year} - {self.duracion}" 
+    def __str__(self):
+        return f" {self.id} - {self.titulo} - {self.artista} - {self.album} - {self.genero} - {self.year} - {self.duracion}" 
+
+    def agregar_version(self, version):
+        self.versiones.append(version)
+
+    def listar_versiones_hijas(self, nivel=1):
+        if not self.versiones:
+            return
+        else:
+            for v in self.versiones:
+                print(" " * nivel + str(v))
+                v.listar_versiones_hijas(nivel + 1)
