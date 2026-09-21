@@ -71,7 +71,7 @@ def main():
         elif opcion == "1":
                 listar_catalogo(catalogo)
         elif opcion == "5":
-                        iterar_recursivo(catalogo)
+                iterar_recursivo(catalogo)
         elif opcion in {"1", "2", "3", "4", "5", "6", "7", "8", "9"}:
             pendiente()
                 
